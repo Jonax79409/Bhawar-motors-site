@@ -1,0 +1,13 @@
+body{
+	margin:0;
+	padding:0px;
+
+}
+
+.slick-slider {
+  margin-bottom: 0; // Or too much space
+}
+
+.slick-dots {
+  position: static; // Else it gets messy
+}
