@@ -5,13 +5,13 @@ body{
 #carousel_content{
 	position: absolute;
 	z-index: 200;
-	font-size: 90px;
+	font-size: 85px;
     border: 8px solid white;
     box-sizing: border-box;
-    padding: 1% 5%;
+    padding: 1% 3%;
     font-style: MS comic sans;
     width: 80%;
-    margin: 10% 10%;
+    margin: 5% 10%;
     border-radius: 30px;
 	color: white;
 	font-weight: 9000px;
@@ -28,7 +28,7 @@ body{
 #offers{
 	display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    margin: 0% 7%;
+    margin: 0% 6%;
     grid-column-gap: 10px;
     grid-row-gap: 1em;
     margin-top: 2%;
@@ -76,4 +76,39 @@ body{
 .caption{
 	height: 100px;
 	margin: 5% 0%;  
+}
+
+@media screen and (max-width: 1024px){
+	#carousel_content{
+		font-size: 60px;
+	}
+	#offers{
+		grid-template-columns: 30% 30% 30%;
+	}
+}
+@media screen and (max-width: 768px){
+	#carousel_content{
+		font-size: 40px;
+		border:5px solid white; 
+		margin: 2% 10%;
+		padding: 1% 2%;
+	}
+	.offers_row1{
+		font-size: 16px;
+		padding: 10%;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 470px){
+	#carousel_content{
+		font-size: 34px;
+	}
+	.why_us_ans{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 375px){
+	#carousel_content{
+		font-size: 20px;
+	}
 }
