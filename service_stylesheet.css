@@ -1,0 +1,79 @@
+body{
+	background-color:#E8E8E8;
+}
+
+#carousel_content{
+	position: absolute;
+	z-index: 200;
+	font-size: 90px;
+    border: 8px solid white;
+    box-sizing: border-box;
+    padding: 1% 5%;
+    font-style: MS comic sans;
+    width: 80%;
+    margin: 10% 10%;
+    border-radius: 30px;
+	color: white;
+	font-weight: 9000px;
+}
+
+#container1{
+	font-size: 26px;
+	font-weight: 9000px;
+	background-color:#E8E8E8;
+	margin: 0px 5px;
+
+	
+}
+#offers{
+	display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin: 0% 7%;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    margin-top: 2%;
+    overflow-x: hidden;
+}
+
+#grid_heading{
+	margin-left: 4%;
+	margin-top: 4%;
+}
+.offers_row1{
+	border:2px solid #686868;
+	box-sizing: border-box;
+	font-size: 20px;
+
+	width: 80%;
+	padding: 13%;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+.offers_row1 img{
+	padding-bottom: 7px;
+	width: 40px;
+}
+
+.why_us{
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 5%;
+	margin-top: 5%;
+	padding-top: 3%;
+}
+.why_us_ans{
+	font-size: 18px;
+	box-sizing: border-box;
+	width: 60%;
+	margin-left: 5%;
+	padding-bottom: 3%;
+
+}
+.details strong{
+	font-size: 20px;
+}
+.caption{
+	height: 100px;
+	margin: 5% 0%;  
+}
