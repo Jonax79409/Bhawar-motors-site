@@ -1,3 +1,4 @@
+
 body,html{
 	padding:0;
 	margin:0;
@@ -35,7 +36,6 @@ body,html{
 	margin:1.4%;
 	width:177px;
 	height:210px;
-	border:1px solid black;
 	float:left;
 }
 .accessory-img img{
@@ -48,7 +48,6 @@ body,html{
 	color:white;
 
 	font-size:24px;
-	border:1px solid black;
 }
 .text2{
 	margin:0;
@@ -63,7 +62,7 @@ body,html{
 	height:auto;
 }
 .parallax{
-	background-image:url('cam08-4_large.jpg');
+	background-image:url('images/cam08-4_large.jpg');
 	height:65%;
 
 	background-attachment:fixed;
