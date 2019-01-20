@@ -48,6 +48,7 @@ body,html{
 
 
 .pll-div{
+	z-index:+10;
 	width:100%;
 	position:relative;
 	margin:1% 0;
@@ -66,7 +67,7 @@ body,html{
 	position:absolute;
 	width:100%;
 	height:100%;
-	background-color:rgba(0,0,0,0.65);
+	background-color:rgba(0, 0, 0, 0.6);
 	background-image:url(https://pathwaystoresilience.org/rewirethebrain/wp-content/uploads/2018/11/SecondBannerImage.jpg);
 	content:'';
 	top:0;
@@ -78,10 +79,20 @@ body,html{
 	display:table;
 	background-attachment:fixed;
 
+
 }
+
 .pll-div p{
 	text-align:center;
 	line-height:350px;
+}
+
+#bigger-pll{
+	height:800px;
+	text-align:center;
+}
+#bigger-pll p{
+	vertical-align: middle;
 }
 
 
@@ -108,18 +119,16 @@ body,html{
 }
 */
 
-.col1{
+.accs{
 	margin:0;
 	padding:9% 9%;
 	box-sizing:border-box;
 
 }
-.ele{
-	box-sizing: border-box;
-	margin:1% 1%;
-	height:auto;
-
+.col-sm-6{
+	padding:3% 3%;
 }
+
 .acc-img, .acc-text{
 	float:left;
 	display:block
@@ -137,9 +146,42 @@ body,html{
 	box-shadow: 0 5px 10px #777;
 }
 .acc-text{
-	margin:0.5% 20% 0.5% 2%;
+	margin:0.5% 19% 0.5% 2%;
 	font-family: 'Raleway', sans-serif;
 	font-weight:700;
-	font-size:32px;
+	font-size:30px;
 	color:#333539;
+}
+
+.bottom-text{
+	font-size:24px;
+	margin-left:0;
+	margin-right: 0;
+	float:left;
+	width:40%;
+	margin:10% 2% 2% 2%;
+
+}
+.location{
+	width:50%;
+	float:left;
+	margin:0;
+	margin:10% 0 3% 0;
+}
+.location iframe{
+	width:100%;
+}
+.bottom-bar{
+	clear:both;
+	height:8%;
+	background-color:#18191B;
+	padding-top:0.7%;
+}
+.bt-bar-text p{
+	
+	padding-left: 6%;
+	font-size:13px;
+	color:white;
+	box-sizing: border-box;
+
 }
