@@ -1,55 +1,64 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.body{
 	background-color:#E8E8E8;
+	margin: 0% ;
+	font-family: open sans;
 }
 
+
 #carousel_content{
+	font-family: Raleway;
 	position: absolute;
 	z-index: 200;
-	font-size: 85px;
-    border: 8px solid white;
+	font-size: 60px;
     box-sizing: border-box;
-    padding: 1% 3%;
-    font-style: MS comic sans;
-    width: 80%;
-    margin: 5% 10%;
+    display: block;	
+    padding: 1% 2%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
     border-radius: 30px;
 	color: white;
-	font-weight: 9000px;
+	color: rgba(255,255,255,1);
+	background-color: rgba(0,0,0,0.4);
 }
 
 #container1{
 	font-size: 26px;
-	font-weight: 9000px;
+	font-family: Raleway;
 	background-color:#E8E8E8;
 	margin: 0px 5px;
-
-	
 }
+
 #offers{
 	display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    margin: 0% 6%;
+    margin: 2% 0% ;
+    padding-bottom: 4%;
     grid-column-gap: 10px;
     grid-row-gap: 1em;
-    margin-top: 2%;
     overflow-x: hidden;
 }
 
 #grid_heading{
-	margin-left: 4%;
 	margin-top: 4%;
+	font-weight: 300;
+	font-family:  Raleway; 
 }
+
 .offers_row1{
 	border:2px solid #686868;
 	box-sizing: border-box;
 	font-size: 20px;
-
 	width: 80%;
 	padding: 13%;
+	margin-left:0px;
 	border-radius: 5px;
 	text-align: center;
-	font-weight: bold;
 }
+
 .offers_row1 img{
 	padding-bottom: 7px;
 	width: 40px;
@@ -57,27 +66,66 @@ body{
 
 .why_us{
 	font-size: 24px;
-	font-weight: bold;
-	margin-left: 5%;
-	margin-top: 5%;
-	padding-top: 3%;
+	font-weight: 300;
+	padding-left: 9%;
+	font-family: 'Raleway';
+	margin-bottom: 1%;
+	padding-top: 2%;
 }
+
+
 .why_us_ans{
 	font-size: 18px;
 	box-sizing: border-box;
-	width: 60%;
-	margin-left: 5%;
+	width: 80%;
+	padding-left: 9%;
 	padding-bottom: 3%;
 
 }
+
 .details strong{
 	font-size: 20px;
 }
+
 .caption{
-	height: 100px;
+	height: 170px;
+	font-size: 16px;
 	margin: 5% 0%;  
 }
 
+#section5{
+	padding:2% 9%;
+}
+
+footer{
+	padding:5% 9%;
+	margin: 0% ;
+	font-size: 16px;
+}
+
+#footer_below{
+	margin: 0% 9%;
+}
+
+.footer_nav a{
+	color: white;
+    display: block;
+    margin-right: 0%;
+    font-size: 20px;
+}
+.footer_website{
+	font-size: 24px;
+}
+
+#section2 ,#section4{
+	margin: 1% 9%;
+}
+
+@media screen and (min-width: 1500px){
+	.body{
+		margin: 0% 15%;
+	}
+}
 @media screen and (max-width: 1024px){
 	#carousel_content{
 		font-size: 60px;
@@ -89,8 +137,6 @@ body{
 @media screen and (max-width: 768px){
 	#carousel_content{
 		font-size: 40px;
-		border:5px solid white; 
-		margin: 2% 10%;
 		padding: 1% 2%;
 	}
 	.offers_row1{
@@ -101,7 +147,14 @@ body{
 }
 @media screen and (max-width: 470px){
 	#carousel_content{
-		font-size: 34px;
+		font-size: 32px;
+	}
+	#offers{		 	 
+		grid-template-columns: 100%;
+	}
+	.offers_row1{
+		padding:1%; 
+
 	}
 	.why_us_ans{
 		width: 80%;
