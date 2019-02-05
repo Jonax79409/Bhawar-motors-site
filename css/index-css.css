@@ -19,7 +19,7 @@ body,html{
 	opacity: 1;
 	width: 100%;
 	position: fixed;
-	z-index: +1;
+	z-index: +11;
 	top: 2%;
 
 }
@@ -61,6 +61,9 @@ body,html{
 	text-decoration:none;
 
 }
+.nav-bar #menu-icon{
+	display:none;
+}
 
 .logo{
 	font-size:24px;
@@ -79,6 +82,15 @@ body,html{
 	margin-left:0;
 	margin-right:0;
 	padding:0;
+}
+.carousel-inner{
+	width:100%;
+	height:100%;
+}
+.item{
+	width:100%;
+	height:100%;
+
 }
 .item img{
   width:100%;
@@ -141,7 +153,7 @@ body,html{
 	width:100%;
 	height:100%;
 	background-color:rgba(0, 0, 0, 0.6);
-	background-image:url(https://pathwaystoresilience.org/rewirethebrain/wp-content/uploads/2018/11/SecondBannerImage.jpg);
+	background-image:url("../images/para-back.jpg");
 	content:'';
 	top:0;
 	bottom:0;
@@ -285,4 +297,57 @@ footer{
 
 .carousal-container {
 	height: 100%
+}
+/* Aakash's code ends */
+
+/*code for responsivness by Gaurav*/
+
+@media screen and (max-width: 800px){
+	.carousal-container{
+		height:37%;
+	}
+	.item img{
+		object-fit:cover;
+		height:100%;
+	}
+	.hid-item{
+		display:none;
+		width:100%;
+	}
+	.nav-bar #menu-icon{
+		display:inline-block;
+	}
+	.accs{
+
+	}
+	.acc-text{
+		font-size:22px;
+		margin:2px 16%;
+	}
+	.cards-x{
+		width:85%;
+		margin:2% 8%;
+		padding:2% 9%;
+	}
+	.space-for-image{
+		width:100%;
+		height:50%;
+		background-size:contain;
+	}
+	.text2{
+		font-size:20px;
+
+	}
+	.pll-div{
+		font-size:20px;
+	}
+	.bottom-text{
+		width:100%;
+		font-size:20px;
+	}
+	.location{
+		width:100%;
+		margin-top:0;
+		margin-bottom:0;
+	}
 }

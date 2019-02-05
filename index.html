@@ -3,7 +3,8 @@
 <head>
   <title>Bhawar Motor store</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/index-css.css">
@@ -15,13 +16,18 @@
 <div class="nav-container">
   <nav class="nav-bar">
     <ul>
-      <li>
+      <li id="menu-icon" onclick="menu_open()">
+        <a href="#">
+          <img src="images/menu.png" style="width:22px">
+        </a>
+      </li>
+      <li class="hid-item">
         <a href="#">Home</a>
       </li>
-      <li>
+      <li class="hid-item">
         <a href="#">Services</a>
       </li>
-      <li>
+      <li class="hid-item">
         <a href="#">Contact</a>
       </li>
       <li class="logo">
@@ -29,6 +35,20 @@
       </li>
     </ul>
   </nav>
+  <script>
+    var flag=0;
+    function menu_open(){
+      if(flag == 0){
+        $(".hid-item").css('display','block');
+        flag=1;
+      }
+      else{
+        $(".hid-item").css('display','none');
+        $(".")
+        flag=0;
+      }
+    }
+  </script>
 </div>
 <div class="container-fluid carousal-container">  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
