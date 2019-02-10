@@ -14,18 +14,39 @@
 <div class="nav-container">
   <nav class="nav-bar">
     <ul>
-      <li>
+      <li id="menu-icon" onclick="menu_open()">
+        <a href="#">
+          <img src="images/menu.png" style="width:22px">
+        </a>
+      </li>
+      <li class="hid-item">
         <a href="#">Home</a>
       </li>
-      <li>
+      <li class="hid-item">
         <a href="#">Services</a>
       </li>
-      <li>
+      <li class="hid-item">
         <a href="#">Contact</a>
+      </li>
+      <li class="logo">
+        <a href="#">Bhawar Motor Store</a>
       </li>
     </ul>
   </nav>
-  <p class="logo"><a href="#">Bhawar Motos</a></p>
+  <script>
+    var flag=0;
+    function menu_open(){
+      if(flag == 0){
+        $(".hid-item").css('display','block');
+        flag=1;
+      }
+      else{
+        $(".hid-item").css('display','none');
+        $(".")
+        flag=0;
+      }
+    }
+  </script>
 </div>
 <div class="address" style="font-family: raleway;font-size:24px">
 	<p><strong>Address</strong></p>
@@ -34,14 +55,14 @@
 	</p>
 
 </div>
-<div class="location">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.7237526057397!2d77.31347991455345!3d28.367200302791897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc71f6e9f557%3A0xeb301eec9ff18517!2sYMCA+University+of+Science+and+Technology!5e0!3m2!1sen!2sin!4v1547262456049" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="location" style='height:60%'>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.7237526057397!2d77.31347991455345!3d28.367200302791897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc71f6e9f557%3A0xeb301eec9ff18517!2sYMCA+University+of+Science+and+Technology!5e0!3m2!1sen!2sin!4v1547262456049" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 
 <footer class="page-footer container-fluid" style="background-color: #282923; color: white;clear:both; padding:5% 9%; ">
         <div class="row" id="footer_below">
-            <div class="col-sm-6" style="padding: 0% 2%">
+            <div class="col-sm-6" style="padding: 1% 2%">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co                
@@ -56,6 +77,6 @@
                 Bhawar-motors.com                
             </div>
         </div>    
-    </footer>
+</footer>
 </body>
 </html>
